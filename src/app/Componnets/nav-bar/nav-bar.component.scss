@@ -1,0 +1,19 @@
+/* styles.css */
+body {
+    direction: rtl;
+    text-align: right;
+  }
+  
+  .navbar-nav {
+    margin-right: auto;
+  }
+.cart-no{
+    position: absolute;
+    min-width: 25px;
+    min-height: 25px;
+    border-radius: 50%;
+    background: rgb(246, 241, 241);
+    text-align: center;
+    top: -12px;
+    right: 32px;
+}
