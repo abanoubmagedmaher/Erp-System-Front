@@ -9,6 +9,8 @@ import { RegisterComponent } from './Componnets/register/register.component';
 import { HomeComponent } from './Componnets/home/home.component';
 import { ProductsComponent } from './Componnets/products/products.component';
 import { CoreModule } from './core/core.module';
+import { ShareModule } from './share/share.module';
+import { ShopModule } from './shop/shop.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,9 @@ import { CoreModule } from './core/core.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    CoreModule
+    CoreModule,
+    ShareModule,
+    ShopModule
   ],
   providers: [],
   bootstrap: [AppComponent]
