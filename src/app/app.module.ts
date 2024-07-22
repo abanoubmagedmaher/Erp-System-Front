@@ -3,18 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './core/nav-bar/nav-bar.component';
 import { HttpClientModule} from '@angular/common/http';
 import { FooterComponent } from './Componnets/footer/footer.component';
 import { RegisterComponent } from './Componnets/register/register.component';
 import { HomeComponent } from './Componnets/home/home.component';
 import { ProductsComponent } from './Componnets/products/products.component';
+import { CoreModule } from './core/core.module';
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
     FooterComponent,
-  
     RegisterComponent,
     HomeComponent,
     ProductsComponent
@@ -22,7 +20,8 @@ import { ProductsComponent } from './Componnets/products/products.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
