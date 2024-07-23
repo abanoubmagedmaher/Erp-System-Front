@@ -1,0 +1,13 @@
+
+
+<div class="col-md-4 product-card " *ngIf="Product">
+    <img src="{{Product.pictureUrl}}" alt="Product Image" class="product-image">
+    <div class="product-info ">
+      <div class="product-name">{{ Product.name }}</div>
+      <div class="product-id">{{ Product.description }}</div>
+      <div class="product-price">{{Product.price}} جنيــه</div>
+      <button class="add-button mb-3">اضــافــة +</button>
+      <button class="add-button">عرض المنتج</button>
+    </div>
+  </div>
+  

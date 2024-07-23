@@ -1,1 +1,52 @@
-<p>shop works!</p>
+<div class="container m" dir="rtl">
+    <div class="row">   
+        <section class="col-md-3 mt-3">
+          <h5 class="text-warning ms-3">ترتيب</h5>
+          <select class="form-select mb-4">
+            <option value="">اختار من حيث السعر</option>
+            <option value="1">السعر: ترتيب منخفض </option>
+            <option value="2">السعر: ترتيب عالي</option>
+          </select>
+
+          <h5 class="text-warning ms-3">التصنيف</h5>
+          <ul class="list-group my-3">
+            <li class="list-group-item active">منتج شغال</li>
+            <li class="list-group-item ">منتج شغال</li>
+            <li class="list-group-item ">منتج شغال</li>
+            <li class="list-group-item ">منتج شغال</li>
+            <li class="list-group-item ">منتج شغال</li>
+          </ul>
+
+          <h5 class="text-warning ms-3"> الانواع</h5>
+          <ul class="list-group my-3">
+            <li class="list-group-item active"> النوع الاول </li>
+            <li class="list-group-item "> النوع الاول </li>
+            <li class="list-group-item "> النوع الاول </li>
+
+          </ul>
+        </section>
+        <section class="col-md-9">
+            <!-- Search -->
+             <div class="mt-3 p-2">
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="ابحث عن طلبك"
+                />
+                </div>
+            <!-- End Search -->
+           <!-- Strat Products -->
+           <div class="row ">
+
+                <div class="product-list">
+                    <app-product-item *ngFor="let product of productList" [Product]="product"></app-product-item>
+            </div>
+            <!-- <div class="col-md-3 product-list" *ngFor="let product of productList">
+                <app-product-item [Product]="product"></app-product-item>
+            </div> -->
+          </div>
+        <!-- End Products -->
+        </section>
+        
+    </div>
+</div>
