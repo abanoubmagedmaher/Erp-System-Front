@@ -36,15 +36,25 @@
                 </div>
             <!-- End Search -->
            <!-- Strat Products -->
-           <div class="row ">
 
-                <div class="product-list">
+           <!-- <div class="row ">
+                <div class="col-md-12">
                     <app-product-item *ngFor="let product of productList" [Product]="product"></app-product-item>
             </div>
-            <!-- <div class="col-md-3 product-list" *ngFor="let product of productList">
-                <app-product-item [Product]="product"></app-product-item>
-            </div> -->
+
+          </div> -->
+
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <app-product-item *ngFor="let product of productList" [Product]="product"></app-product-item>
+
+              </div>
+     
+           
+            </div>
           </div>
+
         <!-- End Products -->
         </section>
         
