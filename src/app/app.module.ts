@@ -14,10 +14,14 @@ import { ShopModule } from './shop/shop.module';
 import { DataTableComponent } from './Componnets/data-table/data-table.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './Componnets/login/login.component';
+//Angular Matrial v 16
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+//PrimNg v16
+import { ButtonModule } from 'primeng/button';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +30,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     HomeComponent,
     ProductsComponent,
     DataTableComponent,
-    LoginComponent
+    LoginComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -37,7 +42,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     ShopModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
-    MatFormFieldModule, MatInputModule, MatSelectModule
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
