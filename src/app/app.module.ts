@@ -11,13 +11,22 @@ import { ProductsComponent } from './Componnets/products/products.component';
 import { CoreModule } from './core/core.module';
 import { ShareModule } from './share/share.module';
 import { ShopModule } from './shop/shop.module';
+import { DataTableComponent } from './Componnets/data-table/data-table.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './Componnets/login/login.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatSelectModule} from '@angular/material/select';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     RegisterComponent,
     HomeComponent,
-    ProductsComponent
+    ProductsComponent,
+    DataTableComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +34,10 @@ import { ShopModule } from './shop/shop.module';
     HttpClientModule,
     CoreModule,
     ShareModule,
-    ShopModule
+    ShopModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatFormFieldModule, MatInputModule, MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
